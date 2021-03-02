@@ -69,11 +69,10 @@
             /* position: absolute; */
             top:0;
             right:0;
-            margin-right: 20vh;
+            margin-right: 0;
         }
         .modal.fade:not(.in).right .modal.right{
-            -webkit-transform: translate3d(25%,0.0);
-            transform: translate3d(25%,0,0);
+            -web
         }
     </style>
 @endsection
