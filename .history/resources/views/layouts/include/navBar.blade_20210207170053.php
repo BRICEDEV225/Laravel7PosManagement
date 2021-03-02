@@ -1,0 +1,1 @@
+a.btn.btn-outline.rounded-pill
