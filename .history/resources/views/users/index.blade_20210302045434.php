@@ -66,14 +66,10 @@
     </div>
     <style>
         .modal.right .modal-dialog{
-            /* position: absolute; */
+            position: absolute;
             top:0;
             right:0;
             margin-right: 20vh;
-        }
-        .modal.fade:not(.in).right .modal.right{
-            -webkit-transform: translate3d(25%,0.0);
-            transform: translate3d(25%,0,0);
         }
     </style>
 @endsection

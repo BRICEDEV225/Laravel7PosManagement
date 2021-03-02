@@ -5,7 +5,7 @@
 <a href="#" class="btn btn-outline rounded-pill"><i class="fa fa-file"></i>Reports</a>
 <a href="{{route('transactions.index')}}" class="btn btn-outline rounded-pill"><i class="fa fa-money-bill"></i>Transactions</a>
 <a href="{{route('suppliers.index')}}" class="btn btn-outline rounded-pill"><i class="fa fa-chart"></i>Supplier</a>
-<a href="#" class="btn btn-outline rounded-pill"><i class="fa fa-users"></i>Customers</a>
+<a href="{{route('')}}" class="btn btn-outline rounded-pill"><i class="fa fa-users"></i>Customers</a>
 <a href="#" class="btn btn-outline rounded-pill"><i class="fa fa-truck"></i>Incomming</a>
 
 <style>

@@ -9,7 +9,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 style="float:left;">Add user</h4>
-                            <a href="#" style="float: right" class="btn btn-dark" data-toggle="modal" data-target="#addUser">
+                            <a href="#" style="float: right" class="btn btn-dark" data-toggle="modal" data->
                                 <i class="fa fa-plus"></i> Add new users
                             </a>
                         </div>
@@ -49,7 +49,7 @@
         </div>
     </div>
     {{--Modal of adding new user --}}
-    <div class="modal right fade" id="addUser" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal right fade" id="idUser" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -59,21 +59,9 @@
                 </button>
                 </div>
                 <div class="modal-body">
-
+                    @include('layouts.include.sideBar')
                 </div>
             </div>
         </div>
     </div>
-    <style>
-        .modal.right .modal-dialog{
-            /* position: absolute; */
-            top:0;
-            right:0;
-            margin-right: 20vh;
-        }
-        .modal.fade:not(.in).right .modal.right{
-            -webkit-transform: translate3d(25%,0.0);
-            transform: translate3d(25%,0,0);
-        }
-    </style>
 @endsection
