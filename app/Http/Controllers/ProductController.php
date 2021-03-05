@@ -15,6 +15,8 @@ class ProductController extends Controller
     public function index()
     {
         //
+        $products = Product::paginate(5);
+        return view('products.index',['products'=>$products]);
     }
 
     /**
@@ -36,6 +38,19 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         //
+        /* $products = new Product;
+
+        $products->product_name = $request->product_name;
+        $products->description = $request->description;
+        $products->alert_stock = $request->alert_stock;
+        $products->brand = $request->brand;
+        $products->quantity = $request->quantity;
+        $products->price = $request->price;
+
+        $products->save();
+         */
+        Product::create($request->all());
+        return redirect()->back()->with('success','Product created successfully');
     }
 
     /**
@@ -70,6 +85,8 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
         //
+        $product->update($request->all());
+        return redirect()->back()->with('success','Product updated successfully');
     }
 
     /**
@@ -81,5 +98,7 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         //
+        $product->delete();
+        return redirect()->back()->with('success', 'Product deleteted successfully');
     }
 }
