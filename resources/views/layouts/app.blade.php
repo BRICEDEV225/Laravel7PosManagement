@@ -77,7 +77,7 @@
 
         {{--sidebar section--}}
             <!-- Button trigger modal -->
-        
+
         <!-- Modal -->
         <div class="modal left fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -117,6 +117,10 @@
                 font-size: 20px;
                 font-weight: bolder;
                 text-transform: uppercase;
+            }
+            .card-header{
+                background:rgb(52,73,94);
+                color:#fff;
             }
         </style>
     </div>
