@@ -5,7 +5,7 @@
     <div class="container-fluid">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <div class="card">
                         <div class="card-header">
                             <h4 style="float:left;">Order Products</h4>
@@ -58,11 +58,49 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-header "><h4>Total <b class="total"> 0.00</b></h4></div>
                         <div class="card-body">
-                            ---------
+                            <div class="panel">
+                                <div class="row">
+                                    <table class="table table-striped">
+                                        <tr>
+                                            <td>
+                                                <label for="">Customer Name</label>
+                                                <input type="text" name="customer_name" id="" class="form-control">
+                                            </td>
+                                            <td>
+                                                <label for="">Customer Name</label>
+                                                <input type="text" name="customer_name" id="" class="form-control">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <td> Payment method <br><br>
+
+                                        <span class="radio-item">
+                                            <input type="radio" name="payment_method" id="payment_method" class="true" value="cash" checked>
+                                            <label for="payment_method"><i class="fa fa-money-bill text-success">Cash</i></label>
+                                        </span>
+                                        <span class="radio-item">
+                                            <input type="radio" name="payment_method" id="payment_method" class="true" value="bank transfert" >
+                                            <label for="payment_method"><i class="fa fa-university text-danger">Bank transfert</i></label>
+                                        </span>
+                                        <span class="radio-item">
+                                            <input type="radio" name="payment_method" id="payment_method" class="true" value="credit card" >
+                                            <label for="payment_method"><i class="fa fa-credit-card text-info">Credit card</i></label>
+                                        </span>
+                                    </td><br>
+                                    <td>
+                                        Payment
+                                        <input type="number" name="paid_amount" id="paid_amount" class="form-control">
+                                    </td>
+                                    <td>
+                                        Returning Change
+                                        <input type="number" name="balance" id="balance" class="form-control" readonly>
+                                    </td>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
